@@ -676,7 +676,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 2
-  m_Camera: {fileID: 0}
+  m_Camera: {fileID: 1677468452}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -804,15 +804,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4727770823014752, guid: 3f3a0b4a4866fbf49ab477a9a2ab2ece, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -0.25
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4727770823014752, guid: 3f3a0b4a4866fbf49ab477a9a2ab2ece, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4727770823014752, guid: 3f3a0b4a4866fbf49ab477a9a2ab2ece, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 2.14
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4727770823014752, guid: 3f3a0b4a4866fbf49ab477a9a2ab2ece, type: 2}
       propertyPath: m_LocalRotation.x
@@ -834,6 +834,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 114586488840650232, guid: 3f3a0b4a4866fbf49ab477a9a2ab2ece,
+        type: 2}
+      propertyPath: m_InputModule
+      value: 
+      objectReference: {fileID: 1330736284}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f3a0b4a4866fbf49ab477a9a2ab2ece, type: 2}
   m_IsPrefabAsset: 0
@@ -977,6 +982,54 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   profile: {fileID: 11400000, guid: be73b732aa8640b40ab048f22ba9ccce, type: 2}
+--- !u!1001 &1330736283
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4288003251620030, guid: a88c5eac4468bd8418d4a68c50504597, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4288003251620030, guid: a88c5eac4468bd8418d4a68c50504597, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4288003251620030, guid: a88c5eac4468bd8418d4a68c50504597, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4288003251620030, guid: a88c5eac4468bd8418d4a68c50504597, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4288003251620030, guid: a88c5eac4468bd8418d4a68c50504597, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4288003251620030, guid: a88c5eac4468bd8418d4a68c50504597, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4288003251620030, guid: a88c5eac4468bd8418d4a68c50504597, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4288003251620030, guid: a88c5eac4468bd8418d4a68c50504597, type: 2}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a88c5eac4468bd8418d4a68c50504597, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!114 &1330736284 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114011564375981208, guid: a88c5eac4468bd8418d4a68c50504597,
+    type: 2}
+  m_PrefabInternal: {fileID: 1330736283}
+  m_Script: {fileID: 11500000, guid: a0d4bf7206a3fb24693512fa6bd67248, type: 3}
 --- !u!1001 &1519359224
 Prefab:
   m_ObjectHideFlags: 0
@@ -1212,6 +1265,11 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1604761024}
   m_CullTransparentMesh: 0
+--- !u!20 &1677468452 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 20642411867398220, guid: 3f3a0b4a4866fbf49ab477a9a2ab2ece,
+    type: 2}
+  m_PrefabInternal: {fileID: 1087103704}
 --- !u!4 &1917762767 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 485514, guid: dc06161b6d97feb419f45f03b62e14b9,
