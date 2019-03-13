@@ -6,8 +6,12 @@ using Valve.VR;
 public class RiftInput : MonoBehaviour {
     [SteamVR_DefaultAction("Interact With UI")]
     public SteamVR_Action_Single interactWithUI;
-	// Update is called once per frame
-	void Update ()
+
+    
+    public GameObject componentDetailsCanvas; // Assign in inspector
+    private bool isShowing;
+    // Update is called once per frame
+    void Update ()
     {
         if (SteamVR_Input._default.inActions.Teleport.GetStateDown(SteamVR_Input_Sources.Any))
         {
@@ -24,5 +28,19 @@ public class RiftInput : MonoBehaviour {
         {
             Debug.Log("Trigger button pulled");
         }
+    }
+
+    public void ShowCanvas()
+    {
+        //Canvas gameobject enable
+        isShowing = !isShowing;
+        componentDetailsCanvas.SetActive(isShowing);
+    }
+
+    public void HideCanvas()
+    {
+        //Canvas gameobject enable
+        isShowing = !isShowing;
+        componentDetailsCanvas.SetActive(!isShowing);
     }
 }
