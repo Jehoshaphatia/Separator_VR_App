@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using Valve.VR;
 
-public class textCheck : MonoBehaviour {
-
-	// Use this for initialization
-	void Start () {
+public class textCheck : MonoBehaviour
+{
+    [SteamVR_DefaultAction("Interact With UI")]
+    public SteamVR_Action_Single interactWithUI;
+    // Use this for initialization
+    void Start () {
 		
 	}
 	
@@ -17,6 +19,11 @@ public class textCheck : MonoBehaviour {
 
     public void TestButton()
     {
-        Debug.Log("This button was clicked");
+        float trigerValue = interactWithUI.GetAxis(SteamVR_Input_Sources.Any);
+
+        if (trigerValue > 0.0f)
+        {
+            Debug.Log("Trigger button pulled On information button");
+        }
     }
 }
