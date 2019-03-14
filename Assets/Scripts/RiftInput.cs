@@ -55,4 +55,6 @@ public class RiftInput : MonoBehaviour {
         componentDetailsCanvas.SetActive(!isShowing);
         componentLabels.SetActive(!isShowing);
     }
+
+
 }
