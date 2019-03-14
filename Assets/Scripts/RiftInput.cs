@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Valve.VR;
 
+[RequireComponent(typeof(AudioSource))]
 public class RiftInput : MonoBehaviour {
     //[SteamVR_DefaultAction("Interact With UI")]
     //public SteamVR_Action_Single interactWithUI;
@@ -11,8 +12,14 @@ public class RiftInput : MonoBehaviour {
     public GameObject componentDetailsCanvas; // Assign in inspector
     public GameObject componentLabels;
     private bool isShowing;
-    //public AudioSource componentVoiceOver;
+    AudioSource componentVoiceOver;
+
     // Update is called once per frame
+
+    private void Start()
+    {
+        componentVoiceOver = GetComponent<AudioSource>();
+    }
     void Update ()
     {
         if (SteamVR_Input._default.inActions.Teleport.GetStateDown(SteamVR_Input_Sources.Any))
@@ -34,8 +41,8 @@ public class RiftInput : MonoBehaviour {
 
     public void ShowCanvas()
     {
+        componentVoiceOver.Play(0);
         //Canvas gameobject enable
-        //componentVoiceOver.Play();
         isShowing = !isShowing;
         componentDetailsCanvas.SetActive(isShowing);
         componentLabels.SetActive(isShowing);
