@@ -9,6 +9,7 @@ public class RiftInput : MonoBehaviour {
 
     
     public GameObject componentDetailsCanvas; // Assign in inspector
+    public GameObject componentLabels;
     private bool isShowing;
     // Update is called once per frame
     void Update ()
@@ -35,6 +36,7 @@ public class RiftInput : MonoBehaviour {
         //Canvas gameobject enable
         isShowing = !isShowing;
         componentDetailsCanvas.SetActive(isShowing);
+        componentLabels.SetActive(isShowing);
     }
 
     public void HideCanvas()
@@ -42,5 +44,6 @@ public class RiftInput : MonoBehaviour {
         //Canvas gameobject enable
         isShowing = !isShowing;
         componentDetailsCanvas.SetActive(!isShowing);
+        componentLabels.SetActive(!isShowing);
     }
 }
