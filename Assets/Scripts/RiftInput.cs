@@ -8,8 +8,9 @@ public class RiftInput : MonoBehaviour {
     //[SteamVR_DefaultAction("Interact With UI")]
     //public SteamVR_Action_Single interactWithUI;
 
-    
+
     public GameObject componentDetailsCanvas; // Assign in inspector
+    public GameObject PerformanceReportCanvas;
     public GameObject componentLabels;
     private bool isShowing;
     AudioSource componentVoiceOver;
@@ -54,6 +55,19 @@ public class RiftInput : MonoBehaviour {
         isShowing = !isShowing;
         componentDetailsCanvas.SetActive(!isShowing);
         componentLabels.SetActive(!isShowing);
+    }
+
+    public void ShowPerformanceReportCanvas()
+    {
+        //Canvas gameobject enable
+        isShowing = !isShowing;
+        PerformanceReportCanvas.SetActive(isShowing);
+    }
+
+    public void CloseApp()
+    {
+        Application.Quit();
+       
     }
 
 

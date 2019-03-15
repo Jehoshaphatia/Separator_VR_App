@@ -33,4 +33,29 @@ public class QuestionOne : MonoBehaviour {
         //code that runs if this choice was made
         choiceMade = 4;
     }
+
+    private void Update()
+    {
+        if (choiceMade == 1 )
+        {
+            //code that runs goes here
+        }
+
+        else if (choiceMade == 2)
+        {
+            //code that runs goes here
+        }
+
+        else if (choiceMade == 3)
+        {
+            //code that runs goes here
+        }
+
+        else
+        {
+            // code that runs goes here
+        }
+
+
+    }
 }
