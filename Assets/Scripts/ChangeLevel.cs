@@ -7,6 +7,6 @@ public class ChangeLevel : MonoBehaviour {
 
 	public void ChangeScene()
     {
-        SceneManager.LoadScene("InteractiveSeparatorAssesmentScene"); 
+        SceneManager.LoadScene("InteractiveSeparatorAssesmentSceneNew"); 
     }
 }
