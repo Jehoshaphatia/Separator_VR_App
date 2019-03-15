@@ -11,7 +11,7 @@ public class RiftInput : MonoBehaviour {
 
     public GameObject componentDetailsCanvas; // Assign in inspector
     public GameObject PerformanceReportCanvas;
-    public GameObject componentLabels;
+    //public GameObject componentLabels;
     private bool isShowing;
     AudioSource componentVoiceOver;
 
@@ -46,7 +46,7 @@ public class RiftInput : MonoBehaviour {
         //Canvas gameobject enable
         isShowing = !isShowing;
         componentDetailsCanvas.SetActive(isShowing);
-        componentLabels.SetActive(isShowing);
+        //componentLabels.SetActive(isShowing);
     }
 
     public void HideCanvas()
@@ -54,7 +54,7 @@ public class RiftInput : MonoBehaviour {
         //Canvas gameobject enable
         isShowing = !isShowing;
         componentDetailsCanvas.SetActive(!isShowing);
-        componentLabels.SetActive(!isShowing);
+        //componentLabels.SetActive(!isShowing);
     }
 
     public void ShowPerformanceReportCanvas()

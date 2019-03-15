@@ -9,6 +9,6 @@ EditorBuildSettings:
     path: Assets/Scenes/InteractiveSeparatorScene.unity
     guid: 6d562569c9d49014d88b8808323c379c
   - enabled: 1
-    path: Assets/Scenes/InteractiveSeparatorAssesmentScene.unity
-    guid: 77eeb67867358b6478d92afd7692d61a
+    path: Assets/Scenes/InteractiveSeparatorAssesmentSceneNew.unity
+    guid: 035bdc994ec0f864daf8c981297db174
   m_configObjects: {}
