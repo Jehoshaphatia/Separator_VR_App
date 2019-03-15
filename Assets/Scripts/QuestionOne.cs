@@ -8,11 +8,19 @@ public class QuestionOne : MonoBehaviour {
     public GameObject choiceTwo;
     public GameObject choiceThree;
     public GameObject choiceFour;
+
+    public Text questionOneAnsResult;
+
     public int choiceMade;
 
-   public void ChoiceOptionOne()
+    string answerCorrect = "Correct";
+    string answerWrong = "Wrong";
+
+    
+   
+
+    public void ChoiceOptionOne()
     {
-        //code that runs if this choice was made
         choiceMade = 1;
     }
 
@@ -34,26 +42,16 @@ public class QuestionOne : MonoBehaviour {
         choiceMade = 4;
     }
 
-    private void Update()
+    public void DisplayAnswerOnReport()
     {
         if (choiceMade == 1 )
         {
-            //code that runs goes here
-        }
-
-        else if (choiceMade == 2)
-        {
-            //code that runs goes here
-        }
-
-        else if (choiceMade == 3)
-        {
-            //code that runs goes here
+            questionOneAnsResult.text = answerCorrect;
         }
 
         else
         {
-            // code that runs goes here
+            questionOneAnsResult.text = answerWrong;
         }
 
 
