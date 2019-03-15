@@ -64,6 +64,14 @@ public class RiftInput : MonoBehaviour {
         PerformanceReportCanvas.SetActive(isShowing);
     }
 
+    public void HidePerformanceReportCanvas()
+    {
+        //Canvas gameobject enable
+        isShowing = !isShowing;
+        PerformanceReportCanvas.SetActive(!isShowing);
+        
+    }
+
     public void CloseApp()
     {
         Application.Quit();
